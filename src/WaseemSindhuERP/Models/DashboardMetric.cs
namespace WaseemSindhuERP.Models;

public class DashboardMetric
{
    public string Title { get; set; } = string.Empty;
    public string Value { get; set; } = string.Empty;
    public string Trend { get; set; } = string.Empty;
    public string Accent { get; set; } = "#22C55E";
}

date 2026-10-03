@@ -1,0 +1,19 @@
+using System.Collections.ObjectModel;
+using System.Windows;
+using WaseemSindhuERP.Data;
+using WaseemSindhuERP.ViewModels;
+
+namespace WaseemSindhuERP;
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+
+        var context = new AppDbContext();
+        DbInitializer.Initialize(context);
+
+        DataContext = new DashboardViewModel();
+    }
+}

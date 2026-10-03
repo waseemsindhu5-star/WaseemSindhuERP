@@ -1,0 +1,26 @@
+# .NET Core
+# .NET Framework
+# VS Code
+# Rider
+# NuGet packages
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+*.cache
+*.obj
+*.exe
+*.dll
+*.log
+*.tmp
+*.bak
+*.db
+*.sqlite
+*.jfm
+*.idea/
+.vs/
+bin/
+obj/
+packages/
+TestResults/
